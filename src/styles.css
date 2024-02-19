@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    margin-top: inherit;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+  margin: 5px auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+#search {
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    font-size: 18px;
+    width: 100%;
+}
+#not-found {
+    color: gray;
+}
+#copy-success {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    /* display: none; */
+    opacity: 0;
+    background-color: lightgreen;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: opacity 2s;
+}
