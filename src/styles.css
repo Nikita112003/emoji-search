@@ -1,3 +1,9 @@
+:root {
+    --border-color: #d3d3d3;
+    --not-found-color: #808080;
+    --success-color: #90ee90;
+    --error-color: #ef5350;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 30px;
@@ -8,32 +14,38 @@ h1 {
 }
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 ul li {
   margin: 5px auto;
-  border: 1px solid lightgray;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 1px 5px;
 }
-#search {
+.search {
     border-radius: 10px;
-    border-color: lightgray;
+    border-color: var(--border-color);
     border-style: solid;
     font-size: 18px;
     width: 100%;
 }
-#not-found {
-    color: gray;
+.not-found {
+    color: var(--not-found-color);
 }
-#copy-success {
+.message {
     position: fixed;
     bottom: 15px;
     left: 50%;
-    /* display: none; */
+    visibility: hidden;
     opacity: 0;
-    background-color: lightgreen;
     padding: 5px 10px;
     border-radius: 7px;
     font-size: 16px;
     transition: opacity 2s;
+}
+.copy-success {
+    background-color: var(--success-color);
+}
+.copy-error {
+    background-color: var(--error-color);
 }

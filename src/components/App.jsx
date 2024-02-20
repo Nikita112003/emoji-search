@@ -36,10 +36,10 @@ export default function App() {
     return (
         <>
         <h1>Поиск эмодзи</h1>
-        <input type="search" name="search" id="search" onChange={(event) => searchChanged(event)}/>
+        <input type="search" name="search" className="search" onChange={(event) => searchChanged(event)} />
 
         { (emojiList.length === 0  && inputLength > 1) &&
-        <p id="not-found">Ничего не найдено</p>
+        <p className="not-found">Ничего не найдено</p>
         }
 
         { emojiList.length > 0 &&
@@ -50,7 +50,7 @@ export default function App() {
         </ul>
         }
 
-        <div id="copy-success">Скопировано</div>
+        <div id="message" className="message"></div>
         </>
     )
 }
